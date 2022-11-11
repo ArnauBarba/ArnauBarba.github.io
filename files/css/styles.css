@@ -1,0 +1,261 @@
+/* IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* LETS DECLARE TEXT AND BACKGROUNDS COLORS FOR MAKE IT EASILY */
+
+:root {
+
+  --title-color: #B29155;
+  --text-color-left: #ffffff;
+  --background-color-left: #000000;
+  --text-color-right: #000000;
+  --background-color-right: #ffffff;
+  --emojis-and-line-color: #B29155;
+  --total-background-color: #ffffff;
+}
+
+/* MAIN LAYOUT ORGANIZATION */
+
+body {
+  margin: 48px 0;
+  padding: 0;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 15px;
+  background-color: var(--total-background-color);
+  color: var(--text-color-right);
+}
+
+.main-container {
+  max-width: 968px;
+  width: calc(100% - 48px);
+  margin-left: 24px;
+  margin-right: 24px;
+  margin: auto;
+  margin-right: auto;
+}
+
+.main-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.main_content{
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  background-color: var(---background-color-right);
+  box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+}
+
+.left_area{
+  background-color: var(--background-color-left);
+  padding: 0 24px;
+}
+
+.right_area{
+  background-color: var(--background-color-right);
+  padding: 0 24px;
+}
+
+/* SECONDARY ORGANIZATION (PARAGRAPHS, SECTIONS AND TITLES) */
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.section {
+  padding: 24px 0;
+}
+
+.section-title {
+  font-size: 20px;
+  color: var(--title-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-title{
+    text-align: initial;
+    gap: 0;
+  }
+  
+ /* BASIC INFO ORGANIZATION */
+
+ .basic_info{
+  position: relative;
+}
+
+.basic_info_container{
+  margin-top: 16px;
+  padding-right: -200px;
+}
+
+.basic_info_data{
+  gap: -160px;
+  text-align: left;
+}
+
+img {
+  max-width: 117.5%;
+  height: 430px;
+  margin-top: -24px;
+  margin-left: -24px;
+  
+}
+
+.basic_info_title {
+  font-size: 80px;
+}
+
+.basic_info_address{
+  gap: 16px;
+}
+
+.basic_info_icon {
+  font-size: 19px;
+  margin-right: 400px;
+}
+
+.job_title{
+  font-size: 27.5px;
+  margin-top: -10px;
+}
+
+/* ABOUT ME */
+
+.about_me_description{
+  display: flex;
+  align-items: center;
+  text-align: initial;
+  font-size: 13px;
+  gap: 0;
+  color: var(--text-color-left);
+}
+
+/* CONTACTS */
+
+.basic_info_contacts{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-color-left);
+}
+
+.contacts_content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* EXPERIENCE */
+
+.experience_content{
+  display: flex;
+}
+
+.experience_time{
+  padding-right: 16px;
+}
+
+.experience_rounder{
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--emojis-and-line-color);
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.experience_line{
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--emojis-and-line-color);
+  transform: translate(7px, 0);
+}
+
+.experience_data{
+  gap: 8px;
+}
+
+.experience_company{
+  font-size: 14px;
+  color: var(--title-color);
+}
+
+/* EDUCATION */
+
+.education_title{
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.education_content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+/* HOBBIES */
+
+.hobbies_container{
+  margin-top: 16px;
+  grid-template-columns: repeat(5, max-content);
+  column-gap: 56px;
+}
+
+.hobbies_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobbies_icon{
+  font-size: 24px;
+  color: var(--emojis-and-line-color);
+  margin-bottom: 4px;
+}
+
+.hobbies_name{
+  display: flex;
+  align-items: center;
+  color: var(--text-color-right);
+}
+
+/* SKILLS */
+
+.skills_content{
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2.5px;
+}
+
+.skills_icon{
+  font-size: 20px;
+  color: var(--emojis-and-line-color);
+  margin-bottom: 4px;
+}
+
+.skills_container{
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.skills_name{
+  align-items: right;
+  color: var(--text-color-right);
+}
