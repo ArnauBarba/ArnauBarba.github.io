@@ -21,3 +21,5 @@ At first I had in my mind to do something more minimalist and with pastel colors
 INSPIRATION 
 
 In this link you can see the CV's that I took as a reference for mine --> https://drive.google.com/drive/folders/1TD-Ju3uaChTWSLh0Zxjpo2dMK21ob6rR?usp=share_link
+
+FIGMA PROJECT --> https://www.figma.com/file/gBl8t9SQBji9uMPnDqbmB4/CV?node-id=0%3A1&t=NA5EIlLskSCCPXxZ-1
